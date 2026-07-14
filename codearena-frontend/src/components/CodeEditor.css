@@ -38,3 +38,29 @@
   background: #16a34a;
   color: white;
 }
+
+.submission-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.submission-table th,
+.submission-table td{
+    padding: 12px 18px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.submission-table th{
+    font-weight: 600;
+    color: white;
+}
+
+.submission-table td{
+    color: #ddd;
+}
+
+.submission-table tbody tr:hover{
+    background-color: #1a1a1a;
+}

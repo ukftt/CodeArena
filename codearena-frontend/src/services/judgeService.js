@@ -72,9 +72,10 @@ export async function runCode(problemId, language, code) {
 // }
 export async function getSubmissions(problemId) {
   const token = localStorage.getItem("token");
+  const userId = localStorage.getItem("userId");
 
-  const res = await fetch(
-    `${BASE_URL}/submissions/user/1/problem/${problemId}`,
+   const res = await fetch(
+    `${BASE_URL}/submissions/user/${userId}/problem/${problemId}`,
     {
       headers: {
         "Authorization": `Bearer ${token}`
